@@ -1,0 +1,38 @@
+.form-container {
+	margin: 20px auto;
+	width: 560px;
+	max-width: 95%;
+	background-color: $primary-brand-color;
+	border-radius: 10px;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+
+		input#submit {
+			border-radius: 5px;
+			font-family: Helvetica, Arial, sans-serif;
+			color: $primary-brand-color;
+			padding: 5px 25px;
+
+			&:focus {
+				outline: none;
+			}
+
+		}	
+
+		.email {
+			padding-bottom: 10px;
+
+			input {
+				font-family: Helvetica, Arial, sans-serif;
+				color: $primary-brand-color;
+				outline: none;
+				border-radius: 5px;
+				padding: 4px;
+			}
+		}
+	}
+}

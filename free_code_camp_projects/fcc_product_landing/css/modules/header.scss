@@ -1,0 +1,62 @@
+// Mixins
+@mixin flex-col () {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin flex-row () {
+	display: flex;
+	flex-direction: row;
+}
+
+header {
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+
+	img {
+		width: 200px;
+		height: 150px;
+	}
+
+	nav {
+
+		ul {
+			padding: 0;
+			@include flex-row;
+		}
+
+		li {
+			padding: 0 10px;
+			list-style: none;
+			font-family: Helvetica, Arial, sans-serif;
+			color: $primary-brand-color;		
+			&:hover {
+				color: $primary-brand-color;
+				cursor: pointer;
+			}
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	header {
+	flex-direction: column;
+	}
+
+}

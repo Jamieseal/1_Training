@@ -1,0 +1,42 @@
+header {
+    width: 90vw;
+    @include flex-row();
+    justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+        @include flex-col();
+    }
+
+    .desktop-nav {
+
+        @media only screen and (max-width: 450px) {
+            display: none !important;
+        }
+    
+        a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $brand-font;
+            color: lightgrey;
+            display: inline-block;
+
+            &:hover {
+                color: $brand-colour-primary;
+            }
+        }
+    }
+
+    .logo {
+        img {
+            width: 225px;
+            height: auto;
+            margin: 20px 0;
+
+            @media only screen and (max-width: 420px) {
+                width: 150px;
+            }
+
+        }
+    }
+}

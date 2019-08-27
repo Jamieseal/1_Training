@@ -1,0 +1,4 @@
+*.zip
+*.conf
+*.map
+node_modules/

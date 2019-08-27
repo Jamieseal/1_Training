@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Javascript Training</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+	<div>
+
+		<h1>Javascript Training</h1>
+
+		<ul>
+
+			<li>
+				<h2 class="highlight">Render Blocking</h2><br/>
+				&bull; Add the following to the JS script tag...<br>
+				&bull; async = HTML and JS download at the same time, JS is executed, then the rest of the HMTL is downloaded.
+				&bull; defer = JS is executed ONLY when everything else is downloaded.
+			</li>
+
+			<li>
+				<h2 class="highlight">CASE DoesMatter</h2><br/>
+				Rules of thumb:<br>
+				&bull; Variables start with lowercase letter<br>
+				&bull; Objects and classes start with UPPERCASE letter<br>
+				&bull; Constants are ALL CAPS for example <code> &quot;const = ALLUPPERCASE&quot;</code>
+			</li>
+
+			<li>
+				<h2 class="highlight">Important Notes</h2><br/>
+				&bull; Variables cannot start with a number!<br>
+				&bull; Always declare variables!
+			</li>
+
+			<li>
+				<h2 class="highlight">Data types</h2><br/>
+				&bull; <strong>String</strong> - letters and symbols, typically words and sentences<br/>
+				<code> * Note: Use a quote in a string - <u>See JS example 1</u></code><br/>
+				&bull; <strong>Boolean</strong> - Binary TRUE / FALSE &quot;<strong>or</strong>&quot; 1 / 0<br/>
+				&bull; <strong>Null</strong> - Stores the intentional absence of a value<br/>
+				&bull; <strong>Undefined</strong> - When you set a variable but don't set it to anything<br/>
+				<code>  - To find data type - in console type console.log(typeof variableName);</code>
+			</li>
+
+			<li>
+				<h2 class="highlight">Shorthand Variables</h2><br/>
+				<code> * Note: NaN - Not a number. For Example:<br/>
+				a = 4;<br/>
+				b = &quot;computer&quot;;<br/>
+				a + b = NaN</code><br/><br/>
+				a - a + 1; can be typed as: a++;<br/>
+				a = a + 4; can be typed as: a += 4;
+			</li>
+
+			<li>
+				<h2 class="highlight">Conditional Statements &amp; Logic</h2><br/>
+				if (some condition) {<br>
+					Do something. <code> When condition is true</code><br/>
+			} else {<br/>
+				Do something else <code> When condition is false</code><br/>
+			}<br/>
+			<code> * Note - For if variables are the same use x2 =! For example: if (a == b) NOT if (a = b)<br/>
+			* Note - For absolute identical testing to see if 2 variables are the same for example var a = 2; and var b = "2"; then use x3 = for example: if (a === b)</code><br/>
+
+			&bull; If a value is less than &quot;<strong>or</strong>&quot; greater than - if (a < b) &quot;<strong>or</strong>&quot; if (a > b)<br/>
+			&bull; If a value is less than and equal to &quot;<strong>or</strong>&quot; greater than and equal to - if (a <= b) &quot;<strong>or</strong>&quot; if (a >= b)<br/>
+			&bull; If a value is NOT equal to - if (a != b) shorthand - if ( !a ) { }<br/>
+			&bull; If a value is NOT identical to - if (a !== b)<br/>
+			</li>
+
+			<li>
+				<h2 class="highlight">Arrays</h2><br/>
+				&bull; Arrays are used to store variables in a comma separated list
+				&bull; Arrays are wrote as: <code>var MyTestArray = ["apples", "bananas", "pears", "oranges"];</code><br/>
+				&bull; Arrays can contain whatever you like ie. numerical data, strings, booleans etc.<br/>
+				&bull; Each of the values added to an array is placed in a separate slot and given an index number. Computers index from 0 therefore the 3rd array would be index 2.
+			</li>
+
+			<li>
+				<h2 class="highlight">Properties and Methods</h2><br/>
+				&bull; Property is meta information about the object<br>
+				&bull; Methods is the function that belongs to the object <code> &quot;Think of methods as small programs that we can use to do things to objects.&quot;</code>
+			</li>
+
+			<li>
+				<h2 class="highlight">Functions and Objects</h2><br/>
+				&bull; Functions are mini programs inside our scripts, they create a result immediately OR create an answer or output to be used by other functions called a return value<br>
+				&bull; 
+			</li>
+
+
+		</ul>
+
+	</div>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
