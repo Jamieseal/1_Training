@@ -47,13 +47,30 @@
                 </div>
 
                 <!-- Static Nav - DESKTOP ONLY -->
-                <nav class="desktop-nav">
+
+                <?php
+
+                wp_nav_menu(
+
+                        array(
+
+                            'theme_location' => 'top-menu',
+                            'menu' => 'main_menu',
+                            'container' => 'nav',
+                            'menu_class' => 'desktop-nav'
+                        )
+
+                );
+
+                ?>
+
+                <!-- <nav class="desktop-nav">
 
                     <a href="#">Shop</a>
                     <a href="#">Blog</a>
                     <a href="#">Testimonials</a>
                     <a href="#">Contact</a>
 
-                </nav>
+                </nav> -->
 
             </header>
