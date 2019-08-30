@@ -56,10 +56,12 @@ h2 {
 
 #main {
     transition: margin-left 0.6s;
+    height: 100vh;
 }
 
 .banner {
     width: 100%;
+    min-width: 100vw;
     min-height: 40vh;
     max-height: 40vh;
     background-image: url(../images/nissan_370z.jpg);
@@ -72,6 +74,8 @@ h2 {
 // Header
 
 header {
+
+    margin: 0 auto;
     width: 90vw;
     @include flex-row();
     justify-content: space-between;
@@ -80,23 +84,39 @@ header {
         @include flex-col();
     }
 
-    .desktop-nav {
+    nav {
 
-        @media only screen and (max-width: 450px) {
-            display: none !important;
-        }
-    
+        margin: 0;
+        padding: 0;
+
+        ul {
+        list-style: none;
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+
         a {
-            padding: 10px;
-            text-decoration: none;
-            font-size: 14px;
-            font-family: $brand-font;
-            color: lightgrey;
-            display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: $brand-font;
+        color: lightgrey;
+        display: inline-block;
 
-            &:hover {
-                color: $brand-colour-primary;
+        &:hover {
+            color: $brand-colour-primary;
+            transition: 0.6s;
+            text-decoration: none;
             }
+        }
+
+        @media only screen and (max-width: 800px) {
+        @include flex-col();
+        }
+        @media only screen and (max-width: 450px) {
+        display: none !important;
+        }
+
         }
     }
 
@@ -104,7 +124,7 @@ header {
         img {
             width: 225px;
             height: auto;
-            margin: 20px 0;
+            margin: 20px;
 
             @media only screen and (max-width: 420px) {
                 width: 150px;
@@ -114,7 +134,6 @@ header {
     }
 }
 
-// Navs
 // Side Nav
 .sidenav {
     height: 100vh;

@@ -1,4 +1,5 @@
-    <?php get_template_part('layout');?>
+    <?php get_layout();?>
+
     <?php get_header();?>
 
     <div id="main">
