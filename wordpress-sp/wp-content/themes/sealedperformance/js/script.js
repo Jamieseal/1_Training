@@ -1,9 +1,20 @@
-function openNav() {
-  document.getElementById("mobileNav").style.width = "100vw";
-  document.getElementById("nav-toggle-open").style.display = "none";
-}
+// declare ID's
+let open = document.getElementById("openNav");
+let mobileNav = document.getElementById("mobileNav");
+let navToggleOpen = document.getElementById("nav-toggle-open");
+let navToggleClose = document.getElementById("nav-toggle-close");
 
-function closeNav() {
-  document.getElementById("mobileNav").style.width = "0";
-  document.getElementById("nav-toggle-open").style.display = "block";
-}
+//open nav
+open.addEventListener("click", function(e) {
+ 	mobileNav.style.height = "100%";
+	navToggleOpen.style.display = "none";
+	navToggleClose.style.display = "block";
+
+});
+
+//close nav
+navToggleClose.addEventListener("click", function(e) {
+ 	mobileNav.style.height = "0";
+	navToggleOpen.style.display = "block";
+	navToggleClose.style.display = "none";
+});

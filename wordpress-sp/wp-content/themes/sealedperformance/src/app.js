@@ -104,15 +104,23 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function openNav() {
-  document.getElementById("mobileNav").style.width = "100vw";
-  document.getElementById("nav-toggle-open").style.display = "none";
-}
+// declare ID's
+var open = document.getElementById("openNav");
+var mobileNav = document.getElementById("mobileNav");
+var navToggleOpen = document.getElementById("nav-toggle-open");
+var navToggleClose = document.getElementById("nav-toggle-close"); //open nav
 
-function closeNav() {
-  document.getElementById("mobileNav").style.width = "0";
-  document.getElementById("nav-toggle-open").style.display = "block";
-}
+open.addEventListener("click", function (e) {
+  mobileNav.style.height = "100%";
+  navToggleOpen.style.display = "none";
+  navToggleClose.style.display = "block";
+}); //close nav
+
+navToggleClose.addEventListener("click", function (e) {
+  mobileNav.style.height = "0";
+  navToggleOpen.style.display = "block";
+  navToggleClose.style.display = "none";
+});
 
 /***/ }),
 
