@@ -104,22 +104,10 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// declare ID's
-var open = document.getElementById("openNav");
+var trigger = document.getElementById("trigger");
 var mobileNav = document.getElementById("mobileNav");
-var navToggleOpen = document.getElementById("nav-toggle-open");
-var navToggleClose = document.getElementById("nav-toggle-close"); //open nav
-
-open.addEventListener("click", function (e) {
-  mobileNav.style.height = "100%";
-  navToggleOpen.style.display = "none";
-  navToggleClose.style.display = "block";
-}); //close nav
-
-navToggleClose.addEventListener("click", function (e) {
-  mobileNav.style.height = "0";
-  navToggleOpen.style.display = "block";
-  navToggleClose.style.display = "none";
+trigger.addEventListener("click", function (e) {
+  mobileNav.classList.toggle('sidenavopen');
 });
 
 /***/ }),
