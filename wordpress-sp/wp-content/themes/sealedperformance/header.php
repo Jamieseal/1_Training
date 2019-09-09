@@ -13,16 +13,6 @@
                     </svg>
                 </div>
 
-                <!-- Side Nav - MOBILE ONLY -->
-<!--                 <nav id="mobileNav" class="sidenav">
-
-                    <a href="#"><i class="fas fa-shopping-cart"></i>Shop</a>
-                    <a href="#"><i class="fas fa-blog"></i>Blog</a>
-                    <a href="#"><i class="fas fa-pencil-alt"></i>Testimonials</a>
-                    <a href="#"><i class="fas fa-envelope"></i>Contact</a>
-
-                </nav> -->
-
                 <!-- Logo -->
                 <div class="logo">
                     <img id="headerLogo" src="<?php bloginfo('template_directory');?>/images/logo.png" alt="Sealed Performance Logo">

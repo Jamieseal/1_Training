@@ -5,8 +5,8 @@
 
         <div class="container">
 
-            <!-- Banner -->
-            <div class="banner"></div>
+            <!-- Quote -->
+            <div class="quote">What’s behind you doesn’t matter. — Enzo Ferrari</div>
         
         <!-- End Main Container div -->
         </div>

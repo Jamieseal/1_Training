@@ -5,7 +5,7 @@
 }
 
 // Variables
-$brand-colour-primary: #CA0814;
+$brand-colour-primary: #CC0001;
 $brand-colour-secondary: #1E1F1C;
 $brand-font: Helvetica, Arial, sans-serif;
 $brand-logo-font: dodgv2ci, Arial, sans-serif;
@@ -163,15 +163,18 @@ header {
 // Mobile nav trigger button
 .trigger {
     position: absolute;
-    top: 66px;
-    right: 20px;
+    top: 42px;
+    right: 40px;
     border: 1px solid #ffffff;
     border-radius: 0%;
     z-index: 2;
+        
+    @media only screen and (max-width: 500px) {
+    right: 20px;
+    }
 
-        @media only screen and (min-width: 1023px) {
-        display: none;
-
+    @media only screen and (min-width: 1023px) {
+    display: none;
     }
 
     .bars {

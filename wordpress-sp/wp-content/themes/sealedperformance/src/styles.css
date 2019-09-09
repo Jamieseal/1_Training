@@ -66,7 +66,7 @@ header nav ul a {
   display: inline-block;
 }
 header nav ul a:hover {
-  color: #CA0814;
+  color: #CC0001;
   transition: 0.6s;
   text-decoration: none;
 }
@@ -118,11 +118,16 @@ header .logo img {
 
 .trigger {
   position: absolute;
-  top: 66px;
-  right: 20px;
+  top: 42px;
+  right: 40px;
   border: 1px solid #ffffff;
   border-radius: 0%;
   z-index: 2;
+}
+@media only screen and (max-width: 500px) {
+  .trigger {
+    right: 20px;
+  }
 }
 @media only screen and (min-width: 1023px) {
   .trigger {
