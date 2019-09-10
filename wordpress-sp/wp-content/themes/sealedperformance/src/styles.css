@@ -27,15 +27,49 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1600px;
+  margin: 0 auto;
+  min-width: 90%;
+  width: 90%;
   height: 100vh;
   justify-content: flex-start;
   padding: 0;
 }
 
+.quote-container {
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.quote {
+  font-family: dodgv2ci, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+.quote .quote-2 {
+  font-family: dodgv2ci, Arial, sans-serif;
+  color: #CC0001;
+  opacity: 0.7;
+  font-size: 22px;
+}
+.quote .quote-3 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: grey;
+  font-size: 14px;
+  font-style: italic;
+}
+
 header {
   margin: 20px auto 0;
-  width: 90vw;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;

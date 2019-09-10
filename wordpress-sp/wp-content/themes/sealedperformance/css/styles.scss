@@ -48,30 +48,50 @@ h2 {
 
 .container {
     @include flex-col;
-    max-width: 1600px;
+    margin: 0 auto;
+    min-width: 90%;
+    width: 90%;
     height: 100vh;
     justify-content: flex-start;
     padding: 0;
 }
 
-// .banner {
-//     width: 100%;
-//     min-width: 100vw;
-//     min-height: 40vh;
-//     max-height: 40vh;
-//     background-image: url(../images/nissan_370z.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     display: block;
-// }
+.quote-container {
+    width: 100%;
+    margin: 60px auto 0;
+    padding: 0 20px;
+
+    @media only screen and (max-width: 1024px) {
+        @include flex-col;
+    }
+}
+
+.quote {
+    font-family: $brand-logo-font;
+    color: #ffffff;
+    font-size: 22px;
+
+    .quote-2 {
+        font-family: $brand-logo-font;
+        color: $brand-colour-primary;
+        opacity: 0.7;
+        font-size: 22px;
+    }
+
+    .quote-3 {
+        font-family: $brand-font;
+        color: grey;
+        font-size: 14px;
+        font-style: italic;
+    }
+}
 
 // Header
 
 header {
 
     margin: 20px auto 0;
-    width: 90vw;
+    width: 90%;
     @include flex-row();
     justify-content: space-between;
 
