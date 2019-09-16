@@ -54,16 +54,16 @@ h2 {
   color: #ffffff;
   font-size: 22px;
 }
-.quote .quote-2 {
+.quote .span {
   font-family: dodgv2ci, Arial, sans-serif;
   color: #CC0001;
   opacity: 0.7;
   font-size: 22px;
 }
-.quote .quote-3 {
+.quote .quote-author {
   font-family: Helvetica, Arial, sans-serif;
   color: grey;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
 }
 

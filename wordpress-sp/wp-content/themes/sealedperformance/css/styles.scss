@@ -71,17 +71,17 @@ h2 {
     color: #ffffff;
     font-size: 22px;
 
-    .quote-2 {
+    .span {
         font-family: $brand-logo-font;
         color: $brand-colour-primary;
         opacity: 0.7;
         font-size: 22px;
     }
 
-    .quote-3 {
+    .quote-author {
         font-family: $brand-font;
         color: grey;
-        font-size: 14px;
+        font-size: 16px;
         font-style: italic;
     }
 }
