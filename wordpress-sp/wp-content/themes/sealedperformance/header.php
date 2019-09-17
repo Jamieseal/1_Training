@@ -28,7 +28,7 @@
                             'theme_location' => 'top-menu',
                             'menu' => 'main_menu',
                             'container' => 'nav',
-                            'menu_class' => 'sidenav',
+                            'menu_class' => 'mobile-nav',
                             'menu_id' => 'mobileNav',
                         )
 

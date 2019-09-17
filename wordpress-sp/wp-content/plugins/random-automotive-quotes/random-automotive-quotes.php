@@ -7,12 +7,6 @@
 	 * Author: Jamie Seal
 	 */
 
-	if ( ! defined('ABSPATH') ) {
-		echo "Access denied!";
-	die;
-	}
-
-
 function get_random_automotive_quote() {
 	global $wpdb;
 	$results = $wpdb->get_results('SELECT * FROM quotes');
@@ -28,7 +22,6 @@ function get_random_automotive_quote() {
 	$random = rand(0, sizeof($quote_array) - 1);
 
 	// function to able to call the quote
-
     echo '<p class="quote">' . $quote_array[$random] . '</p>';
 
 }

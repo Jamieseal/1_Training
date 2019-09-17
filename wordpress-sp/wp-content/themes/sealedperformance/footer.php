@@ -10,19 +10,19 @@
                 <ul>
 
                 <li>
-                    <a href="">
+                    <a href="https://www.facebook.com/sealedperformance/" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
+                    <a href="https://www.instagram.com/sealed_performance_uk/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
+                    <a href="https://www.youtube.com/channel/UCmpcid6uWuGtosLx3MIEUmw" target="_blank">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </li>

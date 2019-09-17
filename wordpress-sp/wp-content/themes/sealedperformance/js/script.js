@@ -4,5 +4,5 @@ let mobileNav = document.getElementById("mobileNav");
 
 
 trigger.addEventListener("click", function(e) {
-	mobileNav.classList.toggle('sidenavopen');
+	mobileNav.classList.toggle('mobile-nav-toggle');
 });
