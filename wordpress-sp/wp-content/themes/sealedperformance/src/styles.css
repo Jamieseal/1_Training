@@ -204,8 +204,59 @@ header .logo img {
 }
 
 footer {
-  padding: 40px;
-  margin: auto 0;
+  padding: 20px;
+  background-color: #151515;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 90%;
+  width: 90%;
+  justify-content: space-between;
+}
+footer .footer-social-icons {
+  text-align: right;
+}
+footer .footer-social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-social-icons ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+footer .footer-social-icons ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-social-icons ul li a i.fab {
   text-align: center;
-  background-color: grey;
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+  line-height: 30px;
+  color: white;
+  border-radius: 50%;
+}
+footer .footer-social-icons ul li a i.fab.fa-facebook-f {
+  background-color: #3A5895;
+}
+footer .footer-social-icons ul li a i.fab.fa-instagram {
+  padding-right: 1px;
+  background-color: #8033A8;
+}
+footer .footer-social-icons ul li a i.fab.fa-youtube {
+  background-color: #FF0000;
+}
+footer .footer-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-align: left;
+  color: grey;
 }

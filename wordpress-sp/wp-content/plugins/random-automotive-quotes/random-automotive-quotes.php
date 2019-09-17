@@ -12,6 +12,8 @@
 	die;
 	}
 
+
+function get_random_automotive_quote() {
 	global $wpdb;
 	$results = $wpdb->get_results('SELECT * FROM quotes');
 
@@ -27,6 +29,6 @@
 
 	// function to able to call the quote
 
-	function getQuote() {
     echo '<p class="quote">' . $quote_array[$random] . '</p>';
-	}
+
+}

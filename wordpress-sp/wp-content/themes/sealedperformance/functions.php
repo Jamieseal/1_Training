@@ -8,7 +8,7 @@ wp_enqueue_style('bootstrap');
 wp_register_style('styles', get_template_directory_uri() . '/src/styles.css', array(), 1, 'all');
 wp_enqueue_style('styles');
 
-wp_register_script('js', get_template_directory_uri() . '/src/app.js', array(jquery), 1, 1, 1,);
+wp_register_script('js', get_template_directory_uri() . '/src/app.js', array(), 1, 1, 1);
 wp_enqueue_script('js');
 
 }
@@ -22,7 +22,7 @@ add_theme_support('menus');
 // Register menus
 register_nav_menus(
 
-	array('top-menu' => __('Top Menu', 'theme')),
+	array('top-menu' => __('Top Menu', 'theme'))
 
 );
 

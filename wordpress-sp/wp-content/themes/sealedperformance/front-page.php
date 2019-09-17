@@ -8,11 +8,7 @@
                 <!-- Quote -->
                 <div class="quote">
 
-                    <?php 
-
-
-
-?>
+                    <?php get_random_automotive_quote() ?>
 
                 </div>
 
